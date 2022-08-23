@@ -1,3 +1,5 @@
+//Constructor function
+
 class Coche {
   constructor(marca) {
     this.marca = marca;
@@ -6,7 +8,9 @@ class Coche {
   }
 
   //Métodos que son como acciones, hacen cosas
-  arrancar(cv) {}
+  arrancar(cv) {
+    return this.cv;
+  }
 }
 
-let audio = new Audio();
+let audi = new Coche('Audi');
