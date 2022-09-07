@@ -1,4 +1,4 @@
-//HERENCIA: podemos crear una clase con sus propiedades y métodos después reutilizarla en otra clase que creemos abajo sin necesidad de describirla como tal. Con la palabra reservada EXTENDS + el nombre de la clase padre, y así cogemos el patrón de la clase padre. Solo se puede extender una clase. Con EXTENDS copiamos directamente todos los métodos de la clase padre en la clase hijjo.
+//HERENCIA: podemos crear una clase con sus propiedades y métodos después reutilizarla en otra clase que creemos abajo sin necesidad de describirla como tal. Con la palabra reservada EXTENDS + el nombre de la clase padre, y así cogemos el patrón de la clase padre. Solo se puede extender una clase. Con EXTENDS copiamos directamente todos los métodos de la clase padre en la clase hijo.
 //Con la palabra SUPER, lo que hacemos es heredar en el hijo la propiedad (constructor) o método de la clase padre y si añadimos más propiedades al hijo, se haría de la manera habitual, con this.
 
 class Telefono {

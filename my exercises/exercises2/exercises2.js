@@ -59,3 +59,55 @@ const alumno1 = new Alumno('Edu', 'Pepe', '2A', [5, 6, 7]);
 console.log(alumno1);
 //To use the method of the object
 console.log(alumno1.getMedia());
+
+console.log('----------------');
+
+//Clase Persona atributos nombre, apellido, edad y métodos escribir por consola con el valor de todos los atributos. Una clase que herede de esa que sea Policía con atributo número de placa y método arrestar que imprima "Te he arrestado" y otro que sea profesor que reciba el parámetro nota media con dos métodos (aprobar que imprima si el estudiante ha aprobado y el segundo método que calcule la media). Después llamar al método común desde un  objeto creado en profesor o polícia desde el método padre y que compruebe que se puede usar.
+
+class Persona {
+  constructor(nombre, apellido, edad) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+  }
+
+  devuelve() {
+    return (
+      'Esta persona se llama ' +
+      this.nombre +
+      ' ' +
+      this.apellido +
+      ' ' +
+      ', y tiene una edad de' +
+      ' ' +
+      this.edad
+    );
+  }
+}
+
+class Policia extends Persona {
+  constructor(nombre, apellido, edad, numeroPlaca) {
+    super(nombre, apellido, edad);
+    this.numeroPlaca = numeroPlaca;
+  }
+
+  arrestar() {
+    return (
+      'El policía' +
+      super.devuelve() +
+      '.' +
+      'Es policía y tiene número de placa' +
+      ' ' +
+      this.numeroPlaca +
+      ' ' +
+      ' y te ha arrestado'
+    );
+  }
+}
+
+const persona1 = new Persona('Laura', 'Bernarbé', '22');
+const policia1 = new Policia('Paco', 'León', '34', '564332-D');
+
+console.log(persona1.devuelve());
+console.log(policia1.arrestar());
+console.log(policia1.devuelve());
