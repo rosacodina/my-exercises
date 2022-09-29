@@ -1,0 +1,28 @@
+/* TIPOS DE SELECTORES
+- UNIVERSAL: - * - Selecciona todos los elementos
+    * {
+        color: red;
+    }
+-DE TIPO: Seleccionamos por el nombre de los elementos (h1, h2, etc.)
+    h1 {
+        color: yellow;
+    }
+-CLASES: agregando el atributo class="nombre-que-quiera" en el elemento HTML y después en CSS poner .nombre-que-quiera:
+    .nombre-que-quiera {
+        color: blue;
+    }
+-ID: - #id-del-elemento - En el elemento del HTML tenemos que poner id="id-del-elemento". Si queremos trabajar correctamente, los IDs tienen que ser únicos para cada elemento y no se deben repetir. El ID también tiene más rango de especificidad.
+    #id-del-elemento {
+        color: yellow;
+    }
+-POR ATRIBUTO: en el elemento HTML ponemos nombre="hola y en CSS::after
+    [nombre="hola] {
+        color: red
+    }
+-DESCENDIENTE: cuando queremos poner una característica a un elemento que está dentro de otra, por ejemplo un <p> dentro de un <h2> y selecciona los <p> que están dentro de un h2
+    h2 p {
+        color: red;
+    }
+-PSEUDO-CLASES: 
+
+*/
